@@ -16,7 +16,6 @@ function App() {
         <option>MR </option>
         <option>MISS</option>
         <option>MRS</option>
-        <option>WTF</option>
       </select>
     </div>
   );
