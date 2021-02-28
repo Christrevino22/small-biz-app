@@ -1,9 +1,6 @@
-import './App.css';
-import React, {useState} from 'react';
-
-
-
-
+import "./App.css";
+import React from "react";
+import { Listing } from "./Components/Listing";
 
 //debating how i should divide and conquer
 
@@ -11,15 +8,13 @@ function App() {
   // const [] = usestate()
   return (
     <div className="App">
-      <h1>HELLO WORLD!!!</h1>
-      <select>
-        <option>MR </option>
-        <option>MISS</option>
-        <option>MRS</option>
-      </select>
+      <Listing></Listing>
     </div>
   );
 }
 
 export default App;
 
+
+
+// NEED TO FIRST CREATE A NAVAGATRION AND USE TO THE LINK TO MOVE AROUND COMPENETS
