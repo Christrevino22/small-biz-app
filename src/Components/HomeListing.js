@@ -12,7 +12,7 @@ import {
 // import Total from '../containers/Total'
 // import AddCar from '../containers/AddCar'
 
-export const Listing = () => {
+const HomeListing = () => {
   return (
     <Container maxWidth="lg" className="car-container">
       {/* <h4>Welcome, {props.user.username}</h4> */}
@@ -49,3 +49,5 @@ export const Listing = () => {
     </Container>
   );
 };
+
+export default HomeListing;

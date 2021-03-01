@@ -1,20 +1,26 @@
 import "./App.css";
 import React from "react";
-import { Listing } from "./Components/Listing";
+import Router from './Router'
+import { BrowserRouter } from "react-router-dom";
+import Navigation from './Components/Navigation'
 
-//debating how i should divide and conquer
+/**
+ * HERE WILLL RESIDE THE SETUP PF THE ROUTER AND PROTECTED ROUTES
+ * I THINK ALL THAT IS LEFT IS TOO CONNECT REDUX STUFF HERE!!!
+ * 
+ */
 
 function App() {
-  // const [] = usestate()
+
   return (
-    <div className="App">
-      <Listing></Listing>
-    </div>
+    
+      <BrowserRouter>
+      <Navigation/>
+        <Router/>
+      </BrowserRouter>
+  
   );
 }
 
 export default App;
 
-
-
-// NEED TO FIRST CREATE A NAVAGATRION AND USE TO THE LINK TO MOVE AROUND COMPENETS
