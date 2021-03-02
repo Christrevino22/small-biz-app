@@ -1,0 +1,9 @@
+.nav-container {
+  background-color: chartreuse;
+  width: max-content;
+}
+
+.nav-list-item {
+  text-decoration: none;
+  color: white;
+}
