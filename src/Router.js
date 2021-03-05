@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router";
 import cookie from "cookie";
 import HomeListing from "./Components/HomeListing";
-import Login from "./Containers/LoginContainer";
+import LoginContainer from "./Containers/LoginContainer";
 
 // Write checkAuth function here
 // const checkAuth = () => {
@@ -32,7 +32,7 @@ const Router = () => {
   return (
     <Switch>
       <Route exact path="/" component={HomeListing} />
-      <Route path="/login" component={Login} />
+      <Route path="/login" component={LoginContainer} />
       <Route path="*" component={() => "404 NOT FOUND!"} />
     </Switch>
   );
