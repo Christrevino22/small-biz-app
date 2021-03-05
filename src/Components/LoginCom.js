@@ -2,7 +2,7 @@ import React from "react";
 import "../Login.css";
 import { Container, Button, TextField } from "@material-ui/core";
 
-const Login = () => {
+const LoginCom = () => {
   return (
     <Container
       style={{
@@ -20,4 +20,4 @@ const Login = () => {
     </Container>
   );
 };
-export default Login;
+export default LoginCom;
