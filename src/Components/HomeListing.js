@@ -12,7 +12,8 @@ import {
 // import Total from '../containers/Total'
 // import AddCar from '../containers/AddCar'
 
-const HomeListing = () => {
+const HomeListing = (props) => {
+  console.log("I HAVE PROPS", props);
   return (
     <Container maxWidth="lg" className="car-container">
       {/* <h4>Welcome, {props.user.username}</h4> */}
@@ -26,6 +27,7 @@ const HomeListing = () => {
             <TableCell>Address</TableCell>
           </TableRow>
         </TableHead>
+        {}
         {/* <TableBody>
                 {props.cars.map((car, idx) => (
                     <TableRow key={car.id}>

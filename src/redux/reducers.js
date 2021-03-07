@@ -1,8 +1,15 @@
 import { combineReducers } from "redux";
 
-const user = (state = null) => state;
-const listings = (state = []) => state;
-const map = (state = null) => state;
-const loggedIn = (state = null) => state;
+const listings = (state = [], action) => {
+  switch(action.type) {
+    case "FETCH_LISTING":
+        return action.value
+    default:
+        return state
+  }
+};
 
-export default combineReducers({ user, listings, map, loggedIn });
+const map = (state = null) => state;
+const user = (state = null) => state;
+
+export default combineReducers({ user, listings, map });

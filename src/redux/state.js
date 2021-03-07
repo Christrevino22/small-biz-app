@@ -5,7 +5,8 @@ export default {
   },
   listings: [],
   map: null,
-  loggedIn: false,
+  // loggedIn: false,
+ 
 };
 
 /**

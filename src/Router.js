@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router";
 import cookie from "cookie";
+import AddListing from "./Components/AddListing";
 import HomeListing from "./Components/HomeListing";
 import LoginContainer from "./Containers/LoginContainer";
 
@@ -33,6 +34,7 @@ const Router = () => {
     <Switch>
       <Route exact path="/" component={HomeListing} />
       <Route path="/login" component={LoginContainer} />
+      <Route path="/addlisting" component={AddListing} />
       <Route path="*" component={() => "404 NOT FOUND!"} />
     </Switch>
   );
