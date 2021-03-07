@@ -8,10 +8,10 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapStateToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     fetchListing: () => dispatch(fetchListing()),
   };
 };
 
-export default connect(mapStateToProps)(HomeListing);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeListing);
