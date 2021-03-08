@@ -5,7 +5,7 @@
  *
  */
 const url =
-  "https://maps.google.com/maps/api/geocode/json?key=process.env.REACT_APP_API_KEY&address=1600+Amphitheatre+Parkway,+Mountain+View,+CA";
+  "https://maps.google.com/maps/api/geocode/json?key=&address=1600+Amphitheatre+Parkway,+Mountain+View,+CA";
 
 export const fetchListing = () => {
   return (dispatch) => {
