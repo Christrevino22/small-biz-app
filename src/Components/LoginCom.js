@@ -9,7 +9,7 @@ class LoginCom extends Component {
   handleClick = () => {
     // console.log("this button was clicked");
     this.setState({ login: !this.state.login });
-    console.log("Are you loggedIn????????", this.state.login);
+    console.log(process.env);
   };
 
   render() {

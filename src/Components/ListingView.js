@@ -15,17 +15,16 @@ class SimpleMap extends Component {
 
   render() {
     return (
+      
       // Important! Always set the container height explicitly
       <div style={{ height: "55vh", width: "55%" }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key:  }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           // yesIWantToUseGoogleMapApiInternals
           // onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
-        >
-          
-        </GoogleMapReact>
+        ></GoogleMapReact>
         {/* <GoogleMap /> */}
       </div>
     );

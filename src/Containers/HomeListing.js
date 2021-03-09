@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchListing: () => dispatch(fetchListing()),
+    fetchListing: (listing) => dispatch(fetchListing(listing)),
   };
 };
 
