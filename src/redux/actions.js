@@ -4,6 +4,23 @@
  * DELETE A LISTING
  *
  */
+
+export const addListing = (listing) => {
+  return {
+    type: "ADD_LISTING",
+    value: listing,
+  };
+};
+
+export const removeListing = (index) => {
+  return {
+    type: "REMOVE_LISTING",
+    value: index,
+  };
+};
+
+//login and out
+
 const url =
   "https://maps.google.com/maps/api/geocode/json?key=&address=1600+Amphitheatre+Parkway,+Mountain+View,+CA";
 
@@ -20,19 +37,3 @@ export const fetchListing = () => {
       });
   };
 };
-
-export const addCar = (car) => {
-  return {
-    type: "ADD_CAR",
-    value: car,
-  };
-};
-
-export const removeCar = (index) => {
-  return {
-    type: "REMOVE_CAR",
-    value: index,
-  };
-};
-
-//login and out

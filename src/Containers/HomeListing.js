@@ -1,16 +1,17 @@
 import { connect } from "react-redux";
 import HomeListing from "../Components/HomeListing";
-import { fetchListing } from "../redux/actions";
+import { addListing, removeListing } from "../redux/actions";
 
 const mapStateToProps = (state) => {
   return {
-    listing: state.listing,
+    listings: state.listings,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchListing: (listing) => dispatch(fetchListing(listing)),
+    addListing: (listing) => dispatch(addListing(listing)),
+    removeListing: (index) => dispatch(removeListing(index)),
   };
 };
 

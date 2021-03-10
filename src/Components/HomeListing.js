@@ -13,7 +13,7 @@ import {
 // import AddCar from '../containers/AddCar'
 
 const HomeListing = (props) => {
-  console.log("I HAVE PROPS", props);
+  console.log("I HAVE PROPS", props.listings);
   return (
     <Container maxWidth="lg" className="car-container">
       {/* <h4>Welcome, {props.user.username}</h4> */}
@@ -29,27 +29,29 @@ const HomeListing = (props) => {
         </TableHead>
         {}
         {/* <TableBody>
-                {props.cars.map((car, idx) => (
-                    <TableRow key={car.id}>
-                        <TableCell component="th" scope="row">
-                            {car.id}
-                        </TableCell>
-                        <TableCell>{car["name"]}</TableCell>
-                        <TableCell>{car["mpg"]}</TableCell>
-                        <TableCell>{car["cylinders"]}</TableCell>
-                        <TableCell>{car["horsepower"]}</TableCell>
-                        <TableCell>
-                            <DeleteIcon
-                                // add onClick method here
-                                onClick={() => props.removeCar(idx)}
-                                className="icon text-red" />
-                        </TableCell>
-                    </TableRow>
-                ))}
-                </TableBody> */}
+          {props.listings.map((listing, idx) => (
+            <TableRow key={listing.id}>
+              <TableCell component="th" scope="row">
+                {listing.id}
+              </TableCell>
+              <TableCell>{listing["name"]}</TableCell>
+              <TableCell>{listing[""]}</TableCell>
+              <TableCell>{listing["cylinders"]}</TableCell>
+              <TableCell>{listing["horsepower"]}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody> */}
       </Table>
     </Container>
   );
 };
 
 export default HomeListing;
+
+{
+  /* <TableCell>
+    {/* <DeleteIcon
+        // add onClick method here
+        onClick={() => props.removeCar(idx)}
+        className="icon text-red" /> */
+}
