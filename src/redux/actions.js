@@ -20,20 +20,4 @@ export const removeListing = (index) => {
 };
 
 //login and out
-
-const url =
-  "https://maps.google.com/maps/api/geocode/json?key=&address=1600+Amphitheatre+Parkway,+Mountain+View,+CA";
-
-export const fetchListing = () => {
-  return (dispatch) => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((response) => {
-        const action = {
-          type: "FETCH_LISTING",
-          value: response.Results,
-        };
-        dispatch(action);
-      });
-  };
-};
+//9urbanspace9

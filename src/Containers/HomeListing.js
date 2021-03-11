@@ -8,11 +8,11 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    // addListing: (listing) => dispatch(addListing(listing)),
-    removeListing: (index) => dispatch(removeListing(index)),
-  };
-};
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     addListing: (listing) => dispatch(addListing(listing)),
+//     removeListing: (index) => dispatch(removeListing(index)),
+//   };
+// };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeListing);
+export default connect(mapStateToProps)(HomeListing);
