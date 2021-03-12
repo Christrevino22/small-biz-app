@@ -3,7 +3,7 @@ export default {
     username: "test-user-1",
     email: "test-user@example.com",
   },
-  listings: [
+  buisness: [
     {
       id: 1,
       name: "888 Pan Asian Restaurant",

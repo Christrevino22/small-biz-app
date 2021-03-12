@@ -5,17 +5,17 @@
  *
  */
 
-export const addListing = (listing) => {
+export const addBuisness = (buisness) => {
   return {
-    type: "ADD_LISTING",
-    value: listing,
+    type: "ADD_BUISNESS",
+    value: buisness
   };
 };
 
-export const removeListing = (index) => {
+export const removeBuisness = (index) => {
   return {
-    type: "REMOVE_LISTING",
-    value: index,
+    type: "REMOVE_BUISNESS",
+    value: index
   };
 };
 

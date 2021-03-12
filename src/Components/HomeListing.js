@@ -13,7 +13,7 @@ import {
 // import AddCar from '../containers/AddCar'
 
 const HomeListing = (props) => {
-  console.log("I HAVE PROPS", props.listings );
+  console.log("I HAVE PROPS", props.buisness);
   return (
     <Container maxWidth="lg" className="car-container">
       {/* <h4>Welcome, {props.user.username}</h4> */}

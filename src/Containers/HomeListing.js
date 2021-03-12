@@ -1,18 +1,18 @@
 import { connect } from "react-redux";
 import HomeListing from "../Components/HomeListing";
-import { addListing, removeListing } from "../redux/actions";
+import { addBuisness, removeBuisness } from "../redux/actions";
 
 const mapStateToProps = (state) => {
   return {
-    listings: state.listings,
+    buisness: state.buisness,
   };
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     addListing: (listing) => dispatch(addListing(listing)),
-//     removeListing: (index) => dispatch(removeListing(index)),
-//   };
-// };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addBuisness: (buisness) => dispatch(addBuisness(buisness)),
+    removeBuisness: (index) => dispatch(removeBuisness(index)),
+  };
+};
 
-export default connect(mapStateToProps)(HomeListing);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeListing);
