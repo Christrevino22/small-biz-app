@@ -3,9 +3,8 @@ import "../Login.css";
 import { Container, Button, TextField } from "@material-ui/core";
 
 class LoginCom extends Component {
-  state = {
-    login: false,
-  };
+
+  
   handleClick = () => {
     console.log("you are loged in!!!", this.state.login);
     this.setState({ login: !this.state.login });
